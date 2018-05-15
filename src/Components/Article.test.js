@@ -9,11 +9,16 @@ it('renders without crashing', () => {
   ReactDOM.unmountComponentAtNode(div);
 });
 
-
-
 it('renders correctly', () => {
+  
+  const props = {
+    name: "zidane",
+    price: 345355,
+    imgSrc: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Zinedine_Zidane_by_Tasnim_03.jpg/280px-Zinedine_Zidane_by_Tasnim_03.jpg"
+  }
+
   const tree = renderer
-    .create(<Article />)
+    .create(<Article {...props} />)
     .toJSON();
   expect(tree).toMatchSnapshot();
 });

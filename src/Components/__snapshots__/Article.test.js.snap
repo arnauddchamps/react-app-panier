@@ -6,5 +6,12 @@ exports[`renders correctly 1`] = `
     alt="zidane"
     src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Zinedine_Zidane_by_Tasnim_03.jpg/280px-Zinedine_Zidane_by_Tasnim_03.jpg"
   />
+  <h3>
+    zidane
+  </h3>
+  <p>
+    345355
+     €
+  </p>
 </div>
 `;

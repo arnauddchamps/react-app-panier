@@ -2,9 +2,10 @@
 
 import React from 'react'
 
-const Article = () => <div>
-  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Zinedine_Zidane_by_Tasnim_03.jpg/280px-Zinedine_Zidane_by_Tasnim_03.jpg" alt="zidane"/>
+const Article = ({ imgSrc, price, name }) => <div>
+  <img src={ imgSrc } alt={ name }/>
+  <h3>{ name }</h3>
+  <p>{ price } €</p>
 </div>
-
 
 export default Article
